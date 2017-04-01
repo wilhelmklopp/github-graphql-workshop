@@ -35,3 +35,19 @@ query {
   }
 }
 ```
+
+### Mutation: Add reaction
+
+```graphql
+mutation {
+  addReaction(input: {
+    subjectId: "MDExOlB1bGxSZXF1ZXN0OTE3NTkxMTE=",
+    content: THUMBS_UP
+  }) {
+    reaction {
+      content
+      id
+    }
+  }
+}
+```
